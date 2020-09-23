@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         ImageView logo = findViewById(R.id.logotype);
         TextView name = findViewById(R.id.userName);
         TextView balance = findViewById(R.id.balance);
+        /* get the image from server for view by picasso plugin */
         Picasso.with(MainActivity.this).load("https://theboom.xyz/" + data[6]).into(logo);
         name.setText(data[3]);
         balance.setText("Balance " + data[4] + "t*");

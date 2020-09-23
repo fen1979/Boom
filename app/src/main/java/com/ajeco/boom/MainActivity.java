@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main, menu);
         Intent intent = getIntent();
         String[] data = intent.getStringArrayExtra("user");
-
+        /* user data for view to user in menu */
         ImageView logo = findViewById(R.id.logotype);
         TextView name = findViewById(R.id.userName);
         TextView balance = findViewById(R.id.balance);
